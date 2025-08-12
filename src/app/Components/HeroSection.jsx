@@ -31,7 +31,7 @@ function HeroSection() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-800 to-indigo-900 text-white p-4 sm:p-6 md:p-10">
+    <div className="min-h-screen bg-[#00246B] text-white p-4 sm:p-6 md:p-10">
       <h1 className="text-3xl font-extrabold flex items-center justify-center">
         TokenizeIt{" "}
       </h1>
@@ -51,7 +51,7 @@ function HeroSection() {
             placeholder="Enter your text here to tokenize..."
             value={text}
             onChange={(e) => setText(e.target.value)}
-            className="flex items-center justify-center w-full h-40 sm:h-48 md:h-60 p-3 sm:p-4 rounded-2xl bg-sky-800 mt-3 outline-none placeholder-gray-400 resize-none text-center text-lg sm:text-2xl leading-[3rem]"
+            className="flex items-center justify-center w-full h-40 sm:h-48 md:h-60 p-3 sm:p-4 rounded-2xl bg-[#CADCFC] mt-3 outline-none placeholder-black resize-none text-center text-lg sm:text-2xl leading-[3rem] text-black"
           />
         </div>
 
@@ -60,10 +60,10 @@ function HeroSection() {
           <h2 className="text-base sm:text-lg font-bold flex items-center gap-2">
             Generated Tokens
           </h2>
-          <div className="h-40 sm:h-48 md:h-60 p-3 sm:p-4 rounded-2xl bg-sky-800 mt-3 flex flex-col items-center justify-center text-gray-400">
+          <div className="h-40 sm:h-48 md:h-60 p-3 sm:p-4 rounded-2xl bg-[#CADCFC] mt-3 flex flex-col items-center justify-center text-gray-400">
             {tokens.length === 0 ? (
               <div className="flex justify-center">
-                <p className="text-sm sm:text-base">Results will appear here</p>
+                <p className="text-sm sm:text-base text-black">Results will appear here</p>
               </div>
             ) : (
               <div className="flex flex-wrap gap-2 text-lg sm:text-xl">
